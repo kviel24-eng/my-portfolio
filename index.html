@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"
+content="width=device-width,initial-scale=1.0">
+<title>Kerviel Josh Q. Juan | Personal Website</title>
+
+<style>
+@import
+url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    --bg: #07111f;
+    --card: #11243a;
+    --cyan: #00e5ff;
+    --white: #f5f8ff;
+    --muted: #a9b9ce;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 85px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: var(--bg);
+    color: var(--white);
+    line-height: 1.7;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+header {
+    position: stickly;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 18px 8%;
+    background: rgba(7, 17, 31, 0.96);
+    border-bottom: 1px solid #263d55;
+    backdrop-filter: blur(12px);
+}
+
+.logo {
+    color: var(--cyan);
+    font-size: 27px;
+    font-weight: 600;
+}
+
+nav {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: var(--muted);
+    font-size: 14px;
+    transition: .3s;
+}
+
+nav a:hover{
+    color: var(--cyan);
+}
+
+.container {
+    width: main(1100px, 88%);
+    margin: auto;
+}
+
+section {
+    scroll-margin-top: 85px;
+}
+
+.hero {
+    min-height: 82vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding-top: 65px;
+    padding-bottom: 65px;
+}
+
+.hero-text {
+    flex: 1;
+    animation: appear .8s ease;
+}
+
+.eyebrow {
+    color: var(--cyan);
+    letter-spacing: 3px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: clamp(35px, 5vw, 58px);
+    line-height:1.2;
+    margin: 15px 0;
+    overflow-wrap: visible;
+}
+
+h1 span, h2 span, .highlight {
+    color: var(--cyan);
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+h3 {
+    margin-bottom: 10px;
+}
+
+p {
+    color: var(--muted);
+}
+
+.hero-text h2 {
+    font-size: 18px;
+    margin-bottom: 18px;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 28px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 22px;
+    border-radius: 9px;
+    background: var(--cyan);
+    color: #07111f;
+    font-weight: 700;
+    border: 1px solid var(--cyan);
+    transition: .3s;
+}
+
+.btn:hover {
+    transform: transparent;
+    box-shadow: 0 8px 25px #00e5ff35;
+}
+
+.btn-outline {
+    background: transparent;
+    color: var(--cyan);
+}
+
+.profile {
+    flex: 0 0 260px;
+    width: 260px;
+    height: 260px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: linear-gradient(145deg, #19445e, #11243a);
+    box-shadow: 0 0 45px #00e5ff25;
+    animation: float 4s ease-in-out infinite;
+    font-size: 100px;
+}
+
+.section {
+    padding: 65px 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+   margin: 0;
+   width: 100%;
+   overflow-x: visible;
+}
+
+img {
+    max-width: 100%;
+    height: outo;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 34px;
+    margin-bottom: 12px;
+}
+
+.subtitle {
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto 35px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3,minmax(0, 1fr));
+    gap: 22px;
+}
+
+.card {
+    background: linear-gradient(145deg, #132941, #0c1929);
+    border: 1px solid #263d55;
+    padding: 25px;
+    border-radius: 16px;
+    transition: .3s;
+    animation: appear .7s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    border-color: var(--cyan);
+    box-shadow: 0 12px 30px #0003;
+}
+
+.icon {
+    font-size: 36px;
+    margin-bottom: 12px;
+}
+
+.text-link {
+    display: inline-block;
+    margin-top: 14px;
+    color: var(--cyan);
+    font-weight: 600;
+}
+
+.info-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.info {
+    background: #0c1b2c;
+    padding: 17px;
+    border: 1px solid #263d55;
+    border-radius: 10px;
+    overflow-wrap: visible;
+}
+
+.info small {
+    display: block;
+    color: var(--cyan);
+    margin-bottom: center;
+}
+
+.family-card {
+    text-align: center;
+}
+
+.family-icon {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.family-message {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.contact-grind {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+}
+
+form {
+    margin-top: 18px;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    margin-top: 12px;
+    color: var(--muted);
+}
+
+input-textarea {
+    display: block;
+    width: 100%;
+    padding: 13px;
+    margin-top: 6px;
+    border: 1px solid #263d55;
+    border-radius: 9px;
+    background: #081626;
+    color: white;
+    font: inherit;
+}
+
+input:focus, textarea:focus {
+    outline: 1px solid var(--cyan);
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    font: inherit;
+    cursor: pointer;
+    margin-top: 16px;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    margin-top: 35px;
+    border-top: 1px solid #263d55;
+    color: var(--muted);
+    font-size: 13px;
+}
+
+@keyframes float {
+    0%, 100% {transform: translateY(0);}
+    50% {transform: translateY(-12px);}
+}
+
+@keyframes appear {
+    form {
+        opacity: 0;
+        transform: translateY(18px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 760px) {
+    header {
+        justify-content: center;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .profile {
+        flex-basis: outo;
+        width: 100px;
+        height: 100px;
+        font-size: 80px;
+    }
+
+    .bottons {
+        justify-content: center;
+    }
+
+    .grid, .info-list, .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+section {
+    height: auto !important;
+    min-height: 100vh;
+    max-height: none !important;
+    overflow: visible !important;
+    scroll-margin-top: 85px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-y: auto !important;;
+    overflow-x: hidden;
+}
+}
+
+.profile-pic {
+    /* style dito */
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    position: relative;
+    z-index: 2
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <a  href="#home" class="logo">KJ<span>.</span></a>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="about">About Me</a>
+        <a href="family">Family</a>
+        <a href="contact">Contact</a>
+    </nav>
+</header>
+
+<!-- PAGE 1: Home -->
+ <section id="home" class="hero container">
+    <a href="#about" class="btn">Next</a>
+    <div class="hero-text">
+        <p class="eyebrow">WELCOME TO MY PERSONAL WEBSITE</p>
+
+        <h1>Hello, I'm<br>
+            <span>Kerviel Josh Q. Juan</span>
+        </h1>
+
+        <h2>IT Student | Future Professional</h2>
+
+        <p>
+            Welcome to my persoonal website! I am a college Student
+            who enjoys playing basketball, working out at the gym,
+            and learning new things about technology.
+            Here, you can learn more about my life, hobbies, and family.
+        </p>
+
+<div class="hero-image">
+   <div class="circle" >
+        <img src="ako.jpg" alt="My Picture" class="profile-pic">
+   </div>
+</div>
+        
+        <div class="buttons">
+            <a href="#about" class="btn">About Me</a>
+            <a href="contact" class="btn btn-outline">Contact Me</a>
+        </div>
+    </div>
+
+    <div class="profile"></div>
+</section>
+
+<!-- PAGE 2: ABOUT ME -->
+<section id="about" class="section container">
+    <a href="#family" class="btn">Next</a>
+    <a href="#home" class="btn">Back</a>
+    <p class="eyebrow" style="text-align:center">GET TO KNOW ME</p>
+    <h2 class="section-title">About<span>ME</span></h2>
+    <p class="subtitle"> Here is some information about
+myself, my education, and my interests.</p>
+
+        <div class="card">
+            <h3>Hello! I'm Kerviel Josh.</h3>
+            <p>
+                I am from Malacampa, Camiling, Tarlac.
+                I am an Information Technology student who wants to
+                improve my programming skills and learn more about computers.
+                I also enjoy sports and physical fitness.
+            </p>
+        </div>
+
+        <div class="info-list">
+            <div class="info">
+                <small>Full Name</small>
+                Kerviel Josh Q. Juan
+            </div>
+            <div class="info">
+                <small>Age</small>
+                18 years old
+            </div>
+            <div class="info">
+                <small>Birthday</small>
+                February 24, 2008
+            </div>
+            <div class="info">
+                <small>Address</small>
+                Malacampa, Camiling, Tarlac
+            </div>
+            <div class="info">
+                <small>Education</small>
+                College Student
+            </div>
+            <div class="info">
+                <small>Degree Program</small>
+                Information Technology
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">
+<span>Hobbies</span></h2>
+
+            <div class="grid">
+                <div class="card">
+                    <div class="icon"></div>
+                    <h3>Basketball</h3>
+                    <p>I enjoy playing basketball and
+spending time with friends.</p>
+            </div>
+            <div class="card">
+                <div class="icon"></div>
+                <h3>Going to the Gym</h3>
+                <p>I work out to improve my strength and fitness.</p>
+            </div>
+            <div class="card">
+                <div class="icon"></div>
+                <h3>Technology</h3>
+                <p>I enjoy exploring computers and learning programming.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PAGE 3: FAMILY -->
+<section id="family" class="section container">
+    <a href="#contact" class="btn">Next</a>
+    <a href="#about" class="btn">Back</a>
+    <p class="eyebrow" style="text-align:
+center;">THE PEOPLE CLOSEST TO MY HEART</p>
+    <h2 class="section-title">My
+<span>Family</span></h2>
+        <p class="subtitle">
+            My family is an important part of my
+life and my journey.
+        </p>
+
+        <div class="grid">
+            <div class="card family-card">
+                <div class="family-icon"></div>
+                <h3>My Father</h3>
+                <p class="highlight">Father's Name</p>
+                <p>Jerry P. Juan</p>
+                </div>
+
+            <div class="card family-card">
+                <div class="family-icon"></div>
+                <h3>My Mother</h3>
+                <p class="highlighr">Mother's Name</p>
+                <p>Winnie Q. Juan</p>
+            </div>
+
+            <div class="card family-card">
+                <div class="family-icon"></div>
+                <h3>My Siblings</h3>
+                <p class="highlight">Brother's Name</p>
+                <p>Jethro Joachim Q. Juan</p>
+            </div>
+        </div>
+
+        <div class="info-list">
+            <div class="card">
+                <h2 class="section-title">Family
+<span>Details</span></h2>
+                
+                <div class="info-list">
+                    <div class="info">
+                        <small>Number of Sibling</small>
+                        09076415400
+                        </div>
+                        <div class="info">
+                            <small>Birth Order</small>
+                            Eldest
+                            </div>
+                        </div>
+                
+                <p class="family-message">I am grateful for my family
+because they inspire to work hard, pursue my dreams, and become a better
+person. Their love and support mean a lot to me.</p>
+            </div>
+        </div>
+    </section>
+
+<!--  PAGE 4: CONTACT -->
+<section id="contact" class="section container">
+    <a href="#family" class="btn">Back</a>
+    <p class="eyebrow" style="text-align:center">LET'S CONNECT</p>
+    <h2 class="section-title">Contact<span>Me</span></h2>
+    <p class="subtitle">Thank you for visiting my personal website</p>
+
+    <div class="contact-grid">
+        <div class="card">
+            <h3>Contact Information</h3>
+            <p>Feel free to contact me using the information below.
+                I would be happy to hear from you!</p>
+
+            <div class="info">
+                <small> Location</small>
+                Malacampa, Camiling, Tarlac
+            </div>
+
+            <div class="info">
+                <small> Email</small>
+                kviel24@gmail.com
+            </div>
+
+            <div class="info">
+                <small> Phone Number</small>
+                09125371154
+            </div>
+
+            <div class="info">
+                <small>Facebook</small>
+                <a
+                href="https://www.facebook.com/share/1JNUDRWtZV//"
+                target="_blank"
+                rel="noopener" class="text-link">
+                Visit my facebook https://www.facebook.com/share/1JNUDRWtZV/
+                </a>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>Send a Message</h3>
+            <p>This is a sample contact form for the website</p>
+
+            <form onsubmit="event.preventDefualt();alert('Thank you for your Message! This is only a demo form.')">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" 
+                        placeholder="Enter your name" required>
+
+                <label for="email">Your Email</label>
+                <input type="email" id="email"
+                        placeholder="Enter your email" required>
+                
+                <label for="message">Your Message</label>
+                <textarea="message" name="message"
+                        placeholder="Write your message" required></textarea>
+
+                <button type="submit" 
+                class="btn">Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<footer>
+    2026  Kerviel Josh Q. Juan | My Personal Website
+</footer
+
+</body>
+</html>
